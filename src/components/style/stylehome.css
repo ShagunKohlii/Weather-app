@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+
+* {
+  margin: 0;
+  font-family: "Lora", serif;
+}
+.container{
+  background: url(./daniel-ramirez-q4TfWtnz_xw-unsplash.jpg) center / cover
+    no-repeat;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.weather {
+  height: 500px;
+  width: 400px;
+  color: whitesmoke;
+  align-items: center;
+  background: rgba(196, 167, 167, 0.35);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+#title {
+  margin: 3px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.inputfield {
+  margin: 10px;
+  padding: 10px;
+  border: none;
+  background-color: transparent;
+  box-shadow: inset 0px 0px 5px 0px white;
+  border-radius: 30px;
+  font-family: "Montserrat", sans-serif;
+}
+.inputfield:focus {
+  outline: none;
+}
+button {
+  background-color: transparent;
+  padding: 10px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1.2rem;
+}
+button:hover {
+  color: white;
+  cursor: pointer;
+  transition: all 1s ease;
+  rotate: 360deg;
+}
+.info {
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+.temp,
+.location {
+  font-size: 3rem;
+  color: white;
+}
+.box,
+#dataN {
+  text-align: center;
+}
+
+@media (max-width: 410px) {
+  .weather {
+    height: 550px;
+    width: 350px;
+  }
+}
